@@ -1,0 +1,12 @@
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\bin\Debug\net6.0\BossaBox.VUTTR.Shared.deps.json
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\bin\Debug\net6.0\BossaBox.VUTTR.Shared.dll
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\bin\Debug\net6.0\BossaBox.VUTTR.Shared.pdb
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.dll
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\refint\BossaBox.VUTTR.Shared.dll
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\BossaBox.VUTTR.Shared.pdb
+\\wsl.localhost\Ubuntu\home\andlmat\workspace\BossaBox\BossaBox.VUTTR.Shared\obj\Debug\net6.0\ref\BossaBox.VUTTR.Shared.dll
