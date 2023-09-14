@@ -1,6 +1,5 @@
 ﻿using BossaBox.VUTTR.Domain.ValueObjects;
 using BossaBox.VUTTR.Shared.Entities;
-using Flunt.Validations;
 
 namespace BossaBox.VUTTR.Domain.Entities
 {
