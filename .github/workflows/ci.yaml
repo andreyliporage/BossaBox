@@ -17,4 +17,4 @@ jobs:
       - name: Test dotnet
         run: dotnet test
       - name: Execute dotnet
-        run: dotnet build BossaBox 
+        run: dotnet build BossaBox.sln
