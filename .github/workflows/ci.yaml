@@ -18,6 +18,8 @@ jobs:
         run: dotnet test
       - name: Execute dotnet
         run: dotnet build BossaBox.sln
+      - name: Coverlet
+        run: dotnet tool install --global coverlet.console
   
   SonarQube:
     name: Analyze
@@ -56,8 +58,11 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"andreyliporage_BossaBox" /o:"andreyliporage" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverageReportPaths=".\sonarqubecoverage\SonarQube.xml"
-          dotnet build
-          dotnet test --collect:"XPlat Code Coverage"
-          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover          
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"andreyliporage_BossaBox" /o:"andreyliporage" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          dotnet build --no-incremental
+          coverlet .\CovExample.Tests\bin\Debug\net6.0\CovExample.Tests.dll
+              --target "dotnet" 
+              --targetargs "test --no-build"
+              -f=opencover 
+              -o="coverage.xml"          
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
