@@ -57,10 +57,7 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"andreyliporage_BossaBox" /o:"andreyliporage" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.coverageReportPaths=".\sonarqubecoverage\SonarQube.xml"
-          dotnet restore
-          dotnet build ./BossaBox.sln
-
-          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover  /p:CoverletOutput=coverage /p:Exclude=[xunit.*]* ./BossaBox.sln
-          mv ./BossaBox.VUTTR.Tests/coverage.opencover.xml opencover.xml 
-
+          dotnet build
+          dotnet test --collect:"XPlat Code Coverage"
+          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover          
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
